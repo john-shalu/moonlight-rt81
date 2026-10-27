@@ -1,0 +1,31 @@
+#include <windows.h>
+#pragma code_page(65001)
+1 ICON "moonlight.ico"
+1 RT_MANIFEST "app.manifest"
+1 VERSIONINFO
+ FILEVERSION 0,2,1,0
+ PRODUCTVERSION 0,2,1,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_APP
+BEGIN
+ BLOCK "StringFileInfo"
+ BEGIN
+  BLOCK "040904b0"
+  BEGIN
+   VALUE "CompanyName", "john-shalu\0"
+   VALUE "FileDescription", "Moonlight for Windows RT 8.1 (community build)\0"
+   VALUE "FileVersion", "0.2.1\0"
+   VALUE "InternalName", "MoonlightRT81\0"
+   VALUE "LegalCopyright", "Copyright 2026 john-shalu and upstream contributors. GPLv3.\0"
+   VALUE "OriginalFilename", "MoonlightRT81.exe\0"
+   VALUE "ProductName", "Moonlight RT\0"
+   VALUE "ProductVersion", "0.2.1\0"
+  END
+ END
+ BLOCK "VarFileInfo"
+ BEGIN
+  VALUE "Translation", 0x409, 1200
+ END
+END
