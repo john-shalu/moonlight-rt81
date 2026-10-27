@@ -1,0 +1,78 @@
+{
+  "version": "0.2.1",
+  "full_client_on_windows_rt81_tested": true,
+  "previous_v0_1_1_actual_rt81": {
+    "video_display_user_confirmed": true,
+    "mouse_keyboard_touch_user_confirmed": true
+  },
+  "current_version_notes": "Owner confirms v0.2.1 practical streaming and input work without issues on Surface 2. Public build adds path remapping, diagnostics license viewer and packaging only; no streaming/input changes.",
+  "prior_actual_surface2_rt81_decoder_probe": {
+    "profiles": [
+      "baseline-cavlc",
+      "main-cabac",
+      "high-cabac-8x8"
+    ],
+    "frames_per_profile": 120,
+    "hardware_dxva_calls_per_profile": 120,
+    "errors": 0,
+    "user_confirmed_smooth_display": true
+  },
+  "baseline_v0_1_x64_tests": {
+    "local_h264_decoded": 360,
+    "local_h264_presented": 360,
+    "local_video_errors": 0,
+    "dxva_calls": 360,
+    "dpapi_identity_create_reload_signature": "pass",
+    "opus_roundtrip_packets": 30,
+    "protocol_mock_cases": [
+      "correct-pin",
+      "wrong-pin-rejected",
+      "wrong-tls-certificate-rejected",
+      "mutual-tls",
+      "chunked-utf8-applist"
+    ]
+  },
+  "baseline_v0_1_real_sunshine_x64": {
+    "pairing": "pass",
+    "desktop_stream_duration_seconds": 15,
+    "decoded_frames": 224,
+    "presented_frames": 224,
+    "video_errors": 0,
+    "dxva_begin_submit_end_each": 224,
+    "opus_packets": 372,
+    "output_queue_drops": 0,
+    "decoded_pcm_frames": 89280,
+    "clean_disconnect": true,
+    "host_content": "idle desktop; frame count is not a motion-frame-rate benchmark",
+    "audible_speaker_output_human_verified": false,
+    "automated_remote_input": false,
+    "media_saved": false
+  },
+  "pending": [
+    "Other Windows RT devices",
+    "Long sessions and suspend/resume",
+    "Systematic 1080p/60fps benchmarks"
+  ],
+  "source_sha256": {
+    "src/app.h": "9d2459b04c4287d020140c4e0225a7347407578537e353d7385211a855f6eb89",
+    "src/app.manifest": "85f6c4b32e5c259f7a83dc5fbfc6a95feec79c029369a7614696c7beae86c54e",
+    "src/app.rc": "a630342e8781728b1e7c15c8efc74154bac0843287064305302537c8a5d18b23",
+    "src/artwork.cpp": "93945c48620e198f631a9b13e8bb810b5b97375de93aabf5f613d3eaa3227417",
+    "src/audio.cpp": "804d0db5567585a0f741da77b6d0613d793084a52cfda6db8d14613f25df2bf7",
+    "src/host.cpp": "5bb75f6c73a130d00a6a11c9a0ab4ee6e6a7ff1d8bac65ff457e6243dc3cc4f8",
+    "src/input_dispatch.cpp": "d50de5a62267ee3aedfeb5b70b434db1c18985cae9e4295a75e7d9a1a2908462",
+    "src/input_queue.h": "47e2489b4bec49fb6736495eed389d0521884057676ff9084aab9ed3739b4867",
+    "src/loader_config.c": "706cdc6c6c6494d8fb3360ace805087c3ceaecdae9f4ceceef512c416679b906",
+    "src/main.cpp": "832f9bdc4b3229f6058625a7471b1273c1bb3f31cd70fee821abca3d91c3939c",
+    "src/mouse.cpp": "e8636e4025a0dfea1519d4ae7d6bb9524288a26537da7a6f232664be187f2f80",
+    "src/mouse.h": "d511059858dc8072ec9cafabc988c671b016cc0021854ff42f5339354189392d",
+    "src/rt_mbedtls_config.h": "cf5c157610f4ffd1ce5dacb602f4e5fbe3bbf80e4d3552d94ea742362a0341c0",
+    "src/threading_alt.h": "f2c9805a29c00270c35f9c6c1839b1019cb18598f065745ecf5cf597713fc310",
+    "src/ui.cpp": "d088a732c8809687906b6de4fa47da45c1a77ac98e68bdc64ea820048dd2bdcb",
+    "src/ui.h": "236f0fe6e0a02a2b6ecec51b34956055ee9e6e951e2c94458c826fe3417a60f4",
+    "src/util.cpp": "6df01f782e20b7127e52c67683172a11e0735774c9a88a75d18f3953d3a42397",
+    "src/video.cpp": "4c7bd95230a4d1541ec1a526e480553409f19fe81044bb0ac9c91ca02b61a52d",
+    "src/video_hooks.c": "7e1977b7baea0576edb45e3e6b881f5ee89adc01c47605bb3d6fa2134efa5252",
+    "src/video_hooks.h": "66e75078acbeacf423761799b06c5c90d66dc6b9c99cf54f928f51a8d0005c29"
+  }
+}

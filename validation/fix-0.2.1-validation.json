@@ -1,0 +1,73 @@
+{
+  "version": "0.2.1",
+  "user_report_0_2_0": {
+    "video_and_audio": "normal; more fluent than Linux according to user",
+    "bugs": [
+      "local and remote cursor both visible",
+      "physical mouse reaches screen edge in games",
+      "input and local controls intermittently freeze at stream start; repeated on reconnect",
+      "right-click close does not close; user uses Task Manager"
+    ],
+    "hang_stack_trace_available": false
+  },
+  "changes": [
+    "UI uses a bounded memory-only queue; sender releases its short queue lock before protocol calls or I/O.",
+    "dispatcher starts after LiStart succeeds; clears/release keys and buttons and joins before LiStop",
+    "session-generation and ready flags reject stale start messages",
+    "disk logging in separate worker; no per-line synchronous disk flush on window thread",
+    "diagnostic text refreshed only when visible; completion polled without UI wait",
+    "cancellation off UI; graceful close has 5-second own-process fallback",
+    "local cursor hidden over video; selectable raw relative mouse with recenter fallback",
+    "touch/pointer remains absolute; releases capture before local menus",
+    "DXGI window association flags suppress automatic window changes, optional hint failure nonfatal"
+  ],
+  "headless_dispatch_test": {
+    "passed": true,
+    "real_input_dispatch_module": true,
+    "transport_functions": "stubbed; no remote input",
+    "motion_enqueues_while_transport_blocked": 10000,
+    "enqueue_elapsed_ms": 16,
+    "restart_cycles": 50,
+    "checked": [
+      "ordering barriers",
+      "adjacent-only coalescing",
+      "overflow resets remote state",
+      "held-key release on end",
+      "stale input flush",
+      "large relative delta split preserves totals"
+    ],
+    "created_windows": false,
+    "read_real_mouse_or_keyboard": false,
+    "network_used": false,
+    "final_revision_passed": true
+  },
+  "computer_ui_testing": "Not performed per user instruction; no client windows started",
+  "actual_surface_rt_0_2_1": {
+    "result": "pass",
+    "reported_by": "device owner",
+    "date": "2026-10-27",
+    "scope": "Owner reports the input/cursor/reconnect fixes work without issues on their Surface 2. Not a broad hardware or endurance certification."
+  },
+  "diagnosis_limit": "No on-device hang stack; fixes address proven blocking/lifecycle risks, not a confirmed single root cause.",
+  "source_findings": [
+    "Hidden diagnostic edit was replacing and relaying out the entire growing log on every log message, even during streaming.",
+    "Window-thread input-library calls shared mutexes with background protocol threads.",
+    "Old code waited synchronously for job termination in the window handler."
+  ],
+  "static_boundary_checks": {
+    "no_transport_calls_in_input_window_handlers": true,
+    "no_disk_write_or_flush_in_app_log": true,
+    "no_infinite_wait_in_window_proc": true,
+    "sender_begin_after_LiStart": true,
+    "sender_end_before_LiStop": true
+  },
+  "final_static_checks": {
+    "ARMNT": true,
+    "subsystem": "6.3",
+    "security_cookie_present": true,
+    "embedded_icon_and_version_present": true,
+    "DPI_aware_manifest": true,
+    "clean_corresponding_arm_source_build": "pass",
+    "no_client_executable_run_after_user_stop": true
+  }
+}

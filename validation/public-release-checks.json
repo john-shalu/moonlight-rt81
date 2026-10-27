@@ -1,0 +1,16 @@
+{
+  "version": "0.2.1",
+  "date": "2026-10-27",
+  "public_binary_sha256": "13e68e02b4e9cb7e4b5dfeeb2061d9aa29724c8de6fe4dbd2b8ea907040c7c51",
+  "ARMNT": true,
+  "subsystem": "6.3",
+  "security_cookie_present": true,
+  "imports_unchanged_from_previous_validated_build": true,
+  "clean_corresponding_source_arm_build": "pass",
+  "personal_path_address_hostname_key_name_scan": "pass",
+  "personal_runtime_data_included": false,
+  "public_rebuild_on_device_retest": false,
+  "functional_input_streaming_source_changed": false,
+  "public_UI_change": "Diagnostics license notice and GPL viewer only",
+  "no_client_GUI_launched_for_public_build": true
+}
