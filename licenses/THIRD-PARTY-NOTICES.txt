@@ -1,0 +1,12 @@
+Moonlight RT 8.1 0.2.1 test client
+Copyright (c) 2026 john-shalu
+Combined application: GNU GPL version 3. See ../LICENSE.
+Decoder probe derivatives: MIT; retain Probe-MIT.txt.
+Moonlight common-c: GPLv3 or later; ENet and NanoRS: MIT.
+Mbed TLS: Apache-2.0 option of its dual license; framework: see its license.
+Opus: see Opus-COPYING and associated patent/license notice. pugixml: MIT.
+Compiler runtime: LLVM Apache-2.0 with LLVM exceptions; MinGW runtime: see notices.
+No Windows DLLs, drivers, codecs or third-party EFI binaries are redistributed.
+The H.264 test clips are project-generated animation assets, inherited from the MIT probe.
+Official Moonlight icon: moonlight-qt commit ac296864ace96f51ad75f78b90644bdbca76c332, GPLv3; see Moonlight-Qt-GPLv3.txt.
+The matching source archive accompanies this binary package.
