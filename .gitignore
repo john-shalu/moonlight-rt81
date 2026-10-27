@@ -1,0 +1,14 @@
+/work/
+/package/
+/package-*/
+/dist/
+__pycache__/
+*.py[cod]
+*.zip
+*.log
+*.dpapi
+identity-*
+device-id.txt
+host-*.pem
+settings.ini
+compatibility-result.json

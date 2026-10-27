@@ -1,0 +1,56 @@
+{
+  "moonlight-common-c": {
+    "repository": "https://github.com/moonlight-stream/moonlight-common-c",
+    "commit": "f900dd4767759c7b9d0e93bcea666b55c69ea62f",
+    "submodules": {
+      "enet": "aca87840b57f045a1f7f9299e4b1b9b8e2a5e2f1",
+      "nanors": "b1e3c22ca0cdc0bb83e3cd6ed1a2fc77869ed99a"
+    }
+  },
+  "mbedtls": {
+    "repository": "https://github.com/Mbed-TLS/mbedtls",
+    "version": "3.6.7",
+    "commit": "068ff080b369adfac81509f9b57b2afabaf82dc5",
+    "framework_commit": "dde0c4a0e448a0552f18817dcea633bb851fd288"
+  },
+  "opus": {
+    "repository": "https://github.com/xiph/opus",
+    "version": "1.5.2",
+    "commit": "ddbe48383984d56acd9e1ab6a090c54ca6b735a6"
+  },
+  "pugixml": {
+    "version": "1.15",
+    "files": [
+      {
+        "name": "pugixml.cpp",
+        "sha256": "67c3892efba51d4e4eb6ce5609286fd2703aede6ba49a6d2130068cad09e0744",
+        "url": "https://raw.githubusercontent.com/zeux/pugixml/v1.15/src/pugixml.cpp"
+      },
+      {
+        "name": "pugixml.hpp",
+        "sha256": "2555f950fd080e02ff16f36698ddf8d4a46d3a484b9337b4cbfc6300043be734",
+        "url": "https://raw.githubusercontent.com/zeux/pugixml/v1.15/src/pugixml.hpp"
+      },
+      {
+        "name": "pugiconfig.hpp",
+        "sha256": "981cd9ad3313878817d7b548c9929cc09d3bc42be2c0c1dcb0d77290fc98b92d",
+        "url": "https://raw.githubusercontent.com/zeux/pugixml/v1.15/src/pugiconfig.hpp"
+      },
+      {
+        "name": "LICENSE.md",
+        "sha256": "0d0b3772af2fa45628a548a3b34583707ebcc68bb6f83ec48ca273aab4a510f1",
+        "url": "https://raw.githubusercontent.com/zeux/pugixml/v1.15/LICENSE.md"
+      }
+    ]
+  },
+  "tools": {
+    "llvm-mingw": {
+      "version": "20261020-msvcrt-x86_64",
+      "sha256": "52a3e3f584a74c3cde8ceb0c6960549683178e03b36818cb02b7ed109a68ff67"
+    },
+    "cmake": {
+      "version": "4.4.4",
+      "sha256": "bace36e94b31c68ab6fa295f26dfa11219e0701cf7c94b0284a7d1cb13dac536"
+    }
+  }
+}
