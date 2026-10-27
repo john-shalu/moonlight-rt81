@@ -1,0 +1,14 @@
+{
+  "source": "https://github.com/moonlight-stream/moonlight-qt",
+  "commit": "ac296864ace96f51ad75f78b90644bdbca76c332",
+  "path": "app/moonlight.ico",
+  "sha256": "217eaa17949f190a582c39898ef524ae80bb944fcc75e54daea714c22831c4d5",
+  "license": "GPL-3.0; see licenses/Moonlight-Qt-GPLv3.txt",
+  "gui_layout_reference": [
+    "app/gui/main.qml",
+    "app/gui/PcView.qml",
+    "app/gui/AppView.qml",
+    "app/gui/SettingsView.qml"
+  ],
+  "qml_or_qt_code_linked": false
+}
